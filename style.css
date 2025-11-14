@@ -1,0 +1,95 @@
+/* Base HTML Styles */
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Rubik:ital,wght@0,400;0,700;1,400&display=swap");
+:root {
+  --white: #ffffff;
+  --pastel-1: #e7b2ff; /* lightest */
+  --pastel-2: #dbb2ff;
+  --pastel-3: #d0b2ff;
+  --pastel-4: #c8b2ff;
+  --pastel-5: #b5b2ff; /* darkest */
+}
+ /* CSS Reset */
+
+ html {
+   box-sizing: border-box;
+   font-size: 16px;
+   font-family: "Inter", sans-serif;
+   color: var(--white);
+   scroll-behavior: smooth;
+ }
+body {
+  background-color: #957bd7;
+}
+
+ *,
+ *:before,
+ *:after {
+   box-sizing: inherit;
+ }
+
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+   font-family: "Rubik", sans-serif;
+ }
+
+ body,
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6,
+ p,
+ ol,
+ ul {
+   margin: 0;
+   padding: 0;
+ }
+
+ ol,
+ ul {
+   list-style: none;
+ }
+
+ img {
+   max-width: 100%;
+   height: auto;
+ }
+
+ input,
+ button,
+ textarea,
+ select {
+   font: inherit;
+ }
+
+ /* header */
+ header .mobile-header {
+   padding: 16px;
+ }
+
+ header button {
+   all: unset;
+ }
+
+ /* .mobile-nav */
+ .mobile-nav a {
+   text-decoration: none;
+   color: var(--white);
+   display: block;
+  padding: 4px 16px;
+ }
+ 
+ /* .desktop-nav */
+ .desktop-nav {
+   display: none;
+ }
+ 
+ /* .hamburger-icon  */
+ .hamburger-icon {
+   height: 50px;
+ }
