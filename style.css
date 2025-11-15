@@ -21,7 +21,7 @@
  }
 
 body {
-  background-color: #957bd7;
+  background-color: #daccff;
 }
 
  *,
@@ -108,8 +108,8 @@ body {
  @media (min-width: 768px) {
    header {
        display: flex;
-       justify-content: center;
-       align-items: flex-end;
+       align-items: center;
+       justify-content: flex-end;
    }
 
    header nav ul {
@@ -153,6 +153,10 @@ body {
    height: 50px;
  }
 
+/* About Me Page */
+
+
+/* .hero */
 .hero {
 padding: 32px 20px;
 background-color: #dbb2ff;
@@ -170,23 +174,48 @@ font-size: 1rem;
 margin-bottom: 24px; 
 }
 
+/* article */
 article {
 padding: 32px 20px;
-background-color: #eccffa;
 border-radius: 30px;
 margin: 20px 30px;
 }
 
+.fact1 {
+background-color:#b4b1ff;
+}
+
+.fact2 {
+background-color:#a4a1f8;
+}
+
+.fact3 {
+background-color:#8f8bf0;
+}
+
 article:hover {
-filter: contrast(70%);
+transform: scale(1.1); /* zoom in slightly on hover */
+transition: transform 0.3s ease;
 }
 
 article h2 {
 margin-bottom: 16px;
-color:#5c488c;    
+color:#513d81;    
 }
 
 article p {
 margin-bottom: 16px; 
-color: #7b6c9f;  
+color:#513d81;  
+}
+
+/* Project Page */
+
+.project {
+    padding: 100px 100px;
+    border: 100px;
+    margin: 10px 10px;
+    background-color:var(--pastel-5);
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
 }
