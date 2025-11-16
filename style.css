@@ -3,7 +3,7 @@
 :root {
   --white: #ffffff;
   --bg:#957bd7;
-  --pastel-light:#eccffa; /* lightest */
+  --pastel-light:#da9df9; /* lightest */
   --pastel-1: #e7b2ff;
   --pastel-2: #dbb2ff;
   --pastel-3: #d0b2ff;
@@ -16,7 +16,7 @@
    box-sizing: border-box;
    font-size: 16px;
    font-family: "Inter", sans-serif;
-   color: var(--white);
+   color:#513d81;
    scroll-behavior: smooth;
  }
 
@@ -126,7 +126,7 @@ body {
  /* .mobile-nav */
  .mobile-nav a {
    text-decoration: none;
-   color: var(--white);
+   color:#513d81;
    display: block;
   padding: 4px 16px;
  }
@@ -140,7 +140,7 @@ body {
    .desktop-nav a {
        text-decoration: none;
        font-size: larger;
-       color: var(--white);
+       color:#513d81;
    }
  
    .desktop-nav {
@@ -213,7 +213,7 @@ color:#513d81;
 .project {
     padding: 32px 20px;
     border-radius: 30px;
-    margin: 20px 30px;
+    margin: 30px 50px;
     background-color:var(--pastel-5);
 }
 
@@ -225,26 +225,21 @@ project p {
 margin-bottom: 16px; 
 }
 
+
 /* Contact */
 
  .contact-form {
    padding: 48px 16px;
-   border-radius: 10px;
    margin: 5px 10px;
  }
  
  .contact-form input,
- .contact-form select {
-   display: block;
-   width: 100%;
-   padding: 8px;
-   margin-bottom: 16px;
- }
- 
  .contact-form textarea {
    display: block;
    width: 100%;
    padding: 8px;
+   border-radius: 10px;
+   margin-bottom: 16px;
  }
  
  .contact-form label {
@@ -253,20 +248,21 @@ margin-bottom: 16px;
  }
  
  .contact-form h2 {
-   color: var(--base-dark);
+   color:#513d81;
    margin-bottom: 16px;
+   text-align: center;
  }
  
  .contact-form input[type="submit"] {
-   background-color: var(--action);
-   border: 0;
+   background-color:#e7b2ff;
+   border: 0.1;
    margin-top: 8px;
    cursor: pointer;
+   color:#513d81;
  }
 
  @media (min-width: 768px) {
    .contact-form h2 {
-       text-align: center;
        font-size: 2.5rem;
    }
  
@@ -275,3 +271,11 @@ margin-bottom: 16px;
        margin: 40px auto;
    }
  }
+
+ /* footer */
+ footer {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 16px;
+    color:#6b6a6a;
+}
