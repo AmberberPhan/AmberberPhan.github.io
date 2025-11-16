@@ -65,8 +65,7 @@ body {
 
  input,
  button,
- textarea,
- select {
+ textarea {
    font: inherit;
  }
 
@@ -76,22 +75,6 @@ body {
  }
 
  /* Components */
-
- /* btn-primary */
- .btn-primary {
-   padding: 12px 16px;
-   display: inline-block;
-   text-decoration: none;
-   color: var(--white);
-   border-radius: 4px;
-   background-color:#d0b2ff;
-   transition: all 0.3s ease;
- }
- 
- .btn-primary:hover {
-   box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.2);
-   transform: translateY(-4px);
- }
 
  /* header */
  header .mobile-header {
@@ -162,6 +145,7 @@ padding: 32px 20px;
 background-color: #dbb2ff;
 border-radius: 30px;
 margin: 30px 50px;
+text-align: center;
 }
 
 .hero h1 {
@@ -176,7 +160,7 @@ margin-bottom: 24px;
 
 /* article */
 article {
-padding: 32px 20px;
+padding: 30px 30px;
 border-radius: 30px;
 margin: 20px 30px;
 }
@@ -194,7 +178,7 @@ background-color:#8f8bf0;
 }
 
 article:hover {
-transform: scale(1.1); /* zoom in slightly on hover */
+transform: scale(1.04); /* zoom in on hover */
 transition: transform 0.3s ease;
 }
 
@@ -272,10 +256,34 @@ margin-bottom: 16px;
    }
  }
 
- /* footer */
+ /* footer for About Me and Projects */
  footer {
     text-align: center;
     padding: 20px 0;
     font-size: 16px;
     color:#6b6a6a;
 }
+
+/* footer for Contact */
+ footer {
+   padding: 16px;
+   text-align: center;
+   display: flex;
+   justify-content: space-around;
+ }
+ 
+ .socials-icon {
+   width: 50px;
+   height: 50px;
+ }
+
+ @media (min-width: 768px) {
+   footer {
+       justify-content: center;
+   }
+ 
+   footer .socials-icon {
+       margin-left: 20px;
+       margin-right: 20px;
+   }
+ }
